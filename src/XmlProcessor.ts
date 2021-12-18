@@ -92,7 +92,6 @@ function parseTag(xml: string): XMLNode {
         }
         currText += char;
     }
-
     return node;
 }
 

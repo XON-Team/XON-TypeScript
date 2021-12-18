@@ -1,0 +1,11 @@
+!html
+test key="value" {
+  "owowo"
+  \selfClose key2="owo"
+  "haha"
+  subTest {
+    "owo"
+    \subSelfClose
+    subSub "Hello"
+  }
+}

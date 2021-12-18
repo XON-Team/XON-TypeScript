@@ -1,7 +1,7 @@
 <!doctype html>
 <test key="value">
     owowo
-    <selfClose />
+    <selfClose key2="owo"/>
     haha
     <subTest>
         owo
