@@ -1,0 +1,8 @@
+<test>
+    <selfClose />
+    <subTest>
+        owo
+        <subSelfClose />
+        <subSub> Hello </subSub>
+    </subTest>
+</test>
