@@ -1,6 +1,7 @@
 <test key="value">
     owowo
     <selfClose />
+    haha
     <subTest>
         owo
         <subSelfClose />
