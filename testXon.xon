@@ -1,11 +1,11 @@
 !html
-test key="value" {
+test key="value" key2="value owo" {
   "owowo"
-  \selfClose key2="owo"
+  /selfClose key2="owo"
   "haha"
   subTest {
     "owo"
-    \subSelfClose
+    /subSelfClose
     subSub "Hello"
   }
 }

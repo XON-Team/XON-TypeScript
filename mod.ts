@@ -1,4 +1,4 @@
 export * from "./src/index.ts"
 import {XON} from "./src/index.ts";
 
-console.log(XON.parse(Deno.readTextFileSync("./testXml.xml"), true));
+console.log(XON.parse(Deno.readTextFileSync("./testXon.xon")));

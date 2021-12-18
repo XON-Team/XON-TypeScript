@@ -97,6 +97,6 @@ function parseTag(xml: string): XMLNode {
 
 class XMLParserError extends Error {
     constructor(xml:string, idx: number, reason: string = "") {
-        super("XML Parser Error at: " + idx + "\n" + xml.substring(idx,10) + "\n" + reason);
+        super("XML Parser Error at: " + idx + "\n" + xml.substr(idx,10) + "\n" + reason);
     }
 }
