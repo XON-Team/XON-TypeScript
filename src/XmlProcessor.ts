@@ -63,6 +63,7 @@ function parseTag(xml: string): XMLNode {
                             switch (keyChar) {
                                 case "=":
                                     let value = "";
+                                    j++;
                                     for (;j < keys.length; j++) {
                                         if (keys[j] == " ") break;
                                         value += keys[j];

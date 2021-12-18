@@ -19,7 +19,7 @@ export default class XonParser {
     private parseXml(input: string): string {
         let xml = parseXml(input);
         if (!xml) return "";
-        
+        console.log(xml.root);
         return "";
     }
 }
