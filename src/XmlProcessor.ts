@@ -3,6 +3,14 @@ import { XMLDoc, XMLNode } from "./types.ts";
 export function parseXml(xml: string): XMLDoc|undefined {
     let doc = {} as XMLDoc;
     if (!xml) return doc;
+    
+    let doctype = /<!doctype .*?>/gi.exec(xml);
+    if (doctype) {
+        let idx = doctype.index;
+        doc.type = "!" + xml.substring(idx+10,xml.indexOf(">",idx+10));
+    }
+
+    
     xml = xml.replace(/<!--.*?-->/g, "").replace(/<!doctype.*?>/gi, "").replace(/<(\?|.{0})xml .*?>/gi, "");
     i = 0;
     doc.root = parseTag(xml);

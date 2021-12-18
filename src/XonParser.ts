@@ -21,7 +21,7 @@ export default class XonParser {
         if (!xml) return "";
         let root = xml.root;
         
-        return this.convertToXon(root);
+        return ((xml.type??"") + "\n" + this.convertToXon(root)).trim();
     }
 
     private convertToXon(root: XMLNode, indent: string = ""): string {

@@ -8,5 +8,6 @@ export type XMLNode = {
 }
 
 export type XMLDoc = {
+    type: string;
     root: XMLNode;
 }
