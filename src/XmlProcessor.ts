@@ -51,7 +51,7 @@ function parseTag(xml: string): XMLNode {
                     let keys = "";
                     if (/\S+ +.+/.test(name)) {
                         console.log(name);
-                        keys = name.substring(name.indexOf(" ")).trim().replace("\"","");
+                        keys = name.substring(name.indexOf(" ")).trim().replace(/"/g,"");
                         name = name.substring(0,name.indexOf(" ")).trim();
                     }
                     node.tag = name;
